@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Do you wanna show me how low & low?</title>
+    <script src ="../js/jquery-3.5.1.js"></script>
+    <script src = "../js/mainJS.js"></script>
+
+    <link rel="stylesheet" href="../css/mainStyle.css">
+</head>
+<body>
+    <div class ="header">
+        <div id = "hhh" style="width:1024px; display: flex;">
+            <div id = "headerSection1">
+
+            </div>
+            <div id = "headerSection2"> 
+                <div id ="logo" onclick="chgPage('mainHome.html')">
+                    
+                </div>
+            </div>
+            <div id = "headerSection3">
+                <div id ="loginck">
+                    <div id = "_submit">                           
+                        <a href="javascript:callSignUp()" id = "signUpText">Join</a>
+                        <a href="javascript:loginPage()" id = "loginText">Login</a>
+                        <p id = "welcome"></p>
+                    </div>
+                </div> 
+            </div>
+            <div id="light" class="white_content">
+                <fieldset id = "loginFieldSet">
+                    <legend>login</legend>
+                        <form id = "loginForm">
+                            <div id = "firstDiv">
+                                <p id = "login_p">ID &nbsp;: </p>
+                                <p id = "login_p">PW : </p>
+                            </div>
+                            <div id = "secondDiv">
+                                <input name='id' type='text' id = "loginUserId" onkeyup="keyUp()">
+                                <input name='pw' type='password' id = "loginUserPw" onkeyup="keyUp()">
+                            </div>
+                            <div id = "_loginSubmit">
+                                <input type="button" onclick="loginChk()" value="login">
+                                <input type="button" onClick="reset()"    value='reset'>
+                                <input type="button" onClick="layerClose()" value='cancel'>
+                            </div>
+                        </form>
+                </fieldset>
+            </div>
+            <div id="fade" class="black_overlay"></div>
+        </div>
+        <div id = "headerSection4">
+            <ul class ="navi" id = "navi">
+                <li class = "li1"> <a href="javascript:chgPage('mainHome.html')" id = "naviRnk">Home <span class="sub">홈으로</span></a></li>
+                <li class = "li1"><a href="javascript:chgPage('kimjihoon.html')" id = "naviRnk">Kimjihoon? <span class="sub">자기소개</span></a></li>
+                <li class = "li1"><a href="javascript:chgPage('roadmap.html')" id = "naviRnk">Roadmap <span class="sub">앞으로..</span></a></li>
+                <li class = "li1"><a href="javascript:chgPage('travel.html')" id = "naviRnk">Travel <span class="sub">여행사진</span></a></li>
+                <li class = "li1"><a href="javascript:chgPage('Skateboard.html')"id = "naviRnk" >Skateboard <span class="sub">종류 소개</span></a></li>
+                <li class = "li1"><a href="javascript:chgPage('drawing.html')"id = "naviRnk">Drawing <span class="sub">제작 일러스트</span></a></li>
+                <li class = "li1" id = "systemManagerMenu"><a href="javascript:chgPage('userSearch.html')">SearchID</a></li>
+            </ul>    
+        </div>
+    </div>
+    <div class ="section">
+        <iframe class="i_frm" id = "i_frm" src = "mainHome.html">
+        </iframe>
+    </div>
+    <div class ="footer">
+        <div id = "footerBoder">
+        </div>
+        <div>
+            <a href="https://www.instagram.com/from.88.06.22/" id ="insta"></a>
+            <a href="https://www.youtube.com/channel/UCPuRaxIuoBl2aDDn8fXT3qw/" id ="youtube"></a>
+            <a href="https://www.naver.com/" id ="naver"></a>
+        </div>
+    </div>
+</body>
+</html>

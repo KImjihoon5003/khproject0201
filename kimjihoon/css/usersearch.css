@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    width:100%; 
+    height:422px; 
+    background: rgb(253, 250, 234);
+}
+
+#firstDiv {
+    width:1024px; 
+    display:flex
+}
+
+#secondDiv {
+    width:146px;
+}
+
+#thirdDiv {
+    float:left; 
+    width:24.5%; 
+    text-align: center;    
+}
+
+#fourth {
+    width:146px;
+}
+
+#box {
+    width:732px;
+    display:block;
+    border-bottom:1px solid black;
+    margin: 0px 20px;
+}
+
+#dynamicP {
+    width:1024px; 
+    display:flex;
+}
+
+#dynamicC1 {
+    width:146px;
+}
+
+#dynamicDiv0 {
+    width:732px;
+}
+
+#dynamicDiv0 > div {
+    color: rgb(0, 0, 0); 
+    float:left; 
+    width: 24.5%;
+}
+
+#userId {
+    font-size: 10;
+}
+
+#fifth {
+    width:146px;
+}
+
+#searchId {
+    background-color: #fdf8e8;
+    border:1px solid black;
+}
+
+#btn01 {
+    background-color: #fdf8e8;
+    border:1px solid black;
+}

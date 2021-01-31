@@ -1,0 +1,230 @@
+@charset "UTF-8";
+    body{
+            width: 1024px;
+            height: 768px;
+            margin:0 auto;
+        }
+        .header{
+            width: 1024px;
+            height: 30%;
+            border-radius:20px 20px 0px 0px;
+            background-image:url('../image/header.jpg');
+        }
+
+        #hhh {
+            height: 65%;
+        }
+
+        #headerSection1 {
+            width:342px;
+        }
+
+        #headerSection2 {
+            width:340px;
+        }
+
+        #headerSection3 {
+            width:342px;
+        }
+
+        #headerSection4 {
+            height: 30%;
+        }
+
+        #logo{
+            width: 130px;
+            height: 90px;
+            margin: 20px 0 0 115px;
+            background-image: url("../image/logo.png");
+        }
+
+        #loginck{         
+            margin: 20px 0 0 0px;
+        }
+
+        #_submit {
+            width: 245px;
+        }
+        
+        #signUpText {
+            color:black;
+            margin-left: 155px;
+            text-decoration: none;
+        }
+        
+        #loginText{
+            color: black;
+            font-family:"fantasy";
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .navi{ 
+            list-style-type: none; /* bullet 제거 */
+            padding: 0; 
+            margin-left: 50px;
+            margin-top : 25px;
+        }
+
+        .li1 {
+            position: relative; /* position:absolute요소의 기준 설정 */
+            float:left; /* 가로배치 */
+            line-height: 30%; 
+            background-color: #fcf6e2;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            font-family:"fantasy"; 
+            border-bottom: 1px solid black;
+        }
+
+        .navi li a { 
+            display: block; 
+            font-family:"fantasy"; 
+            font-weight:600; 
+            padding: 5px 25px; 
+            color: rgb(14, 13, 13);
+            text-decoration: none; 
+        } 
+        .li1{position: relative; }
+        .li1 .sub{display: block; font-size: 8px; line-height: 40px; opacity: 0; transition: all 0.5s; transform: translateY(-8px);}
+        .li1::before{display: block; position: absolute; width: 100%; content: ''; height: 2px; box-sizing: border-box; border-top: 1px solid rgb(0, 0, 0); top: 0; left: 0; transition: all 0.5s;}
+        .li1::after{display: block; position: absolute; width: 100%; content: ''; height: 1px; border-bottom: 0.5px solid rgb(0, 0, 0); bottom:0; left:0; opacity: 0; transition: all 0.5s;transform: translateY(-8px);}
+        .li1:hover .sub{opacity: 1;transform: translateY(0);height:15px;}
+        .li1:hover::before{border-top: 2px solid rgb(0, 0, 0);}
+        .li1:hover::after{opacity: 1;transform: translateY(0);}
+
+        .navi li:hover ul {
+            display: block;
+            opacity: 50;
+        }     
+        .section{
+            width: 100%;
+            height: 55%;
+            float: center;
+            margin: 0 auto;
+        }
+        .footer{
+            width: 100%;
+            height: 20%;
+            clear: both;
+            margin: 0 auto;
+            border-radius:0px 0px 20px 20px;
+            background-image:url('../image/footer2.jpg');
+        }
+        #footerBoder {
+            width:795.6px;
+            float:center;
+            border-top: 1.5px solid black;
+            margin-left:130px;
+            padding-top: 5px;
+        }
+        #insta{
+            margin-top: 70px;
+            margin-left: 470px;
+            width: 30px;
+            height: 30px;
+            float: left;
+            border-radius: 20px;
+            background-image: url("../image/Instagram_logo_2016.png");
+        }
+        #youtube{
+            margin-top: 70px;
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            float: left;
+            border-radius: 20px;
+            background-image: url("../image/lo1.png");
+        }
+        #naver{
+            margin-top: 70px;
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            float: left;
+            border-radius: 20px;
+            background-image: url("../image/lo2.png");
+        }
+        .i_frm {
+            width: 1024px;
+            height:422px;
+            border: hidden;
+            margin: 0 auto;
+        }
+
+        #naviRnk{
+            height: 25px;
+        }
+        #systemManagerMenu{
+            height: 35px;
+        }
+
+        /* 로그인 layout popup */
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%; 
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            margin-left: 100px;
+            display: none;
+            position: absolute;
+            top: 26.5%;
+            left: 36.5%;
+            width: 283px;
+            height: 177px;
+            padding: 16px;
+            border: 2px solid #e0dbdb;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            z-index:1002;
+            overflow: auto;
+        }
+
+        #loginFieldSet {
+            width:250px; 
+            height: 150px;
+        }
+        
+        #loginForm {
+            width: 100%;
+        }
+        
+        #firstDiv {
+            width: 18%; 
+            height: 50%; 
+            float: left;
+        }
+        
+        #secondDiv {
+            width: 82%; 
+            height: 50%; 
+            float: left; 
+            margin-top: 17px;
+        }
+        
+        #loginUserPw {
+            margin-top: 15px;  
+        }
+        
+        #_loginSubmit {
+            margin-left: 7px;
+            width: 100%; 
+            clear: both; 
+            text-align: center;
+        }
+        
+        #login_p {
+            width: 40px;
+            height: 22px; 
+        }

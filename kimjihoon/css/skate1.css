@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+    width: 1024px;
+    height: 422px;
+    margin: 0 auto;
+}
+#stskate{
+
+    height: 100%;
+    width: 100%;
+    border-radius:20px;
+    float: left;
+    display: inline;
+    background-image:url("../image/bgsection.jpg");
+}
+#stskate{filter: blur(3px) grayscale(100%); transition: 0.5s;}
+#stskate.hoverBox{display: block; position: absolute; width:100%; top: 50%; transform: translateY(-50%)}
+#stskate:hover.hoverBox{display: none;}
+#stskate:hover{filter: blur(0) grayscale(0);}

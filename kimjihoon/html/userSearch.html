@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimjihoon?</title>
+    <script src = "../js/jquery-3.5.1.js"></script>
+    <script src = "../js/usersearchJS.js"></script>
+    <link rel="stylesheet" href="../css/usersearch.css">
+<style>
+
+</style>
+<body>
+    <div id = "firstDiv">
+        <div id = "secondDiv">
+        </div>
+        <div id = "box">
+            <input type="text" id = "searchId" placeholder="Please Enter Your ID" onkeyup="keyUp()">
+            <button onclick="srchAllUser()" id = "btn01">Search</button>
+            <div>
+                <div id = "thirdDiv">
+                    <p>ID</p>
+                </div>
+                <div id = "thirdDiv">
+                    <p>NAME</p>
+                </div>
+                <div id = "thirdDiv">
+                    <p>PIN NUMBER</p>
+                </div>
+                <div id = "thirdDiv">
+                    <p>PHON NUMBER</p>
+                </div>
+            </div>
+        </div>
+        <div id = "fourth">
+    
+        </div>
+    </div>
+    <div id = "dynamicP">
+        <div id = "dynamicC1">
+
+        </div>
+        <div id="dynamicDiv0">
+            <div id="dynamicDiv1">
+                <p id = "userId"></p>
+            </div>
+            <div id="dynamicDiv2">
+                <p id = "userName"></p>
+            </div>
+            <div id="dynamicDiv3">
+                <p id = "userPinNumber"></p>
+            </div>
+            <div id="dynamicDiv4">
+                <p id = "userPhNumber"></p>
+            </div>
+        </div>
+        <div id = "fifth">
+
+        </div>
+    </div>
+</body>
+</html>

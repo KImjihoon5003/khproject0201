@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "../js/loginJS.js"></script>
+</head>
+<body style="width: 1024px; height:768px">
+    <fieldset style="width:250px; height: 150px; margin:220px 0 0 512px">
+        <legend>login</legend>
+            <form method='post' action='login_ck.php' style="width: 100%;">
+                <div id = "firstDiv" style="width: 18%; height: 50%; float: left;">
+                    <p style="width: 40px;height: 22px;">ID &nbsp;: </p>
+                    <p style="width: 40px;height: 22px;">PW : </p>
+                </div>
+                <div id = "secondDiv" style="width: 82%; height: 50%; float: left; margin-top: 17px;">
+                    <input name='id' type='text' id = "userId" onkeyup="keyUp()">
+                    <input name='pw' type='password' style="margin-top: 15px;" id = "userPw" onkeyup="keyUp()">
+                </div>
+                <div id = "_submit" style="width: 100%; clear: both; text-align: center;">
+                   <!-- <input type='submit' value='login'> -->
+                    <input type="button" onclick="loginChk()" value="login">
+                    <input type='reset'  onClick="reset()"    value='reset'>
+                    <a href='join.html'></a>
+                </div>
+            </form>
+    </fieldset>
+</body>
+</html>

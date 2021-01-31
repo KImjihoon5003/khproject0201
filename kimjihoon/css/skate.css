@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+html {
+    background: rgb(253, 250, 234);
+    margin: 0 auto;
+}
+body {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    height: 422px;
+    margin: 0 auto; 
+
+}      
+#skate{
+
+    height: 100%;
+    width: 61%;
+    border-radius:20px;
+    float: left;
+    display: inline;
+    background-image:url("../image/ska.png");
+    
+
+}
+
+p{
+    font-size: 50px;
+    color:rgb(117, 5, 39);
+    text-decoration: none;
+    line-height:10px ;
+    font-family :fantasy;
+    font-weight:500;
+    border-color: black;
+    
+    
+}
+
+
+
+#skate{filter: blur(3px) grayscale(100%); transition: 0.5s;}
+#skate.hoverBox span{display: block; position: absolute; width:100%; top: 50%; transform: translateY(-50%)}
+#skate.hoverBox span p{text-align: center;}
+#skate:hover.hoverBox{display: none;}
+#skate:hover{filter: blur(0) grayscale(0);}
+
+#skate1 {
+
+    height: 220px;
+    width: 385px;
+    border-radius:20px;
+    float: left;
+    display: inline;
+    background-image: url("../image/ska.jpg");
+}
+
+#skate1{filter: blur(3px) grayscale(100%); transition: 0.5s;}
+#skate1.hoverBox span{display: block; position: absolute; width:100%; top: 50%; transform: translateY(-50%)}
+#skate1.hoverBox span p{text-align: center;}
+#skate1:hover.hoverBox{display: none;}
+#skate1:hover{filter: blur(0) grayscale(0);}
+
+
+#skate2 {
+
+    height: 200px;
+    width: 385px;
+    border-radius:20px;
+    float: left;
+    display: inline;
+    background-image: url("../image/ska1.jpg");
+
+}
+
+#skate2{filter: blur(3px) grayscale(100%); transition: 0.5s;}
+#skate2.hoverBox span{display: block; position: absolute; width:100%; top: 50%; transform: translateY(-50%)}
+#skate2.hoverBox span p{text-align: center;}
+#skate2:hover.hoverBox{display: none;}
+#skate2:hover{filter: blur(0) grayscale(0);}
+
+
